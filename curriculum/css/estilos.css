@@ -1,0 +1,200 @@
+@keyframes colores{
+from{
+   	background-color: #000022;
+
+   }
+   to{
+   	background-color: #4522AA;
+
+   }
+}
+@keyframes girar{
+	from{
+		transform: rotate(0deg); 
+	}
+	to{
+		transform: rotate(360deg);
+	}
+}
+body{
+	background-color:#1c1d26;
+}
+#cabezera h1{
+	font-family: Arial;
+}
+#cabezera{
+	width: 100%;
+	background-color: #00FF55;
+	color: white;
+	text-align: center;
+	height: 100%;
+	display: flex;
+	margin: 0px auto;
+	justify-content: center;
+	align-items: center;
+	animation: colores 5s alternate infinite;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+.mitad{
+	
+	 border-left: 3px solid #e44c65;
+  height: 80%;
+  position: absolute;
+  left: 50%;
+  margin-left: -3px;
+  top: 4.8rem;
+}
+.datos{
+	
+	color:#eeeeee;
+	font-family: Arial;
+	position: absolute;
+	padding: 2rem;
+	padding-left:50%; 
+	
+  }
+.izquierda{
+	
+	color:#eeeeee;
+	font-family: Arial;
+	position: absolute;
+
+	padding-right:50%; 
+	text-align: center;
+}
+.datos h1{
+	text-align: center;
+	text-shadow: 4px 8px 4px black;
+	animation: girar 2s linear ;
+
+}
+.datos h1:hover{
+	text-shadow: 2px 4px 2px black, 4px 4px 16px #ff1744;
+}
+.iz{
+	padding-bottom: 100%;
+}
+
+.info{
+	padding-top: 10%;
+	
+
+	padding-left: 10%;
+	font-size: 20px;
+
+}
+#circu{
+
+    position: absolute;
+    margin-left: -7rem;
+	margin-top:5%;
+	left: 50%;
+	width: 324px;
+	height: 324px;
+	border: 8px solid #000022;
+	border-top: 8px solid #890620;
+	border-bottom: 8px solid #29335C;
+	border-radius: 50%;
+	animation: girar 5s linear infinite;
+}
+
+#circu img{
+	width: 300px;
+	margin: 0px auto;
+	padding-top: 20px;
+}
+.iz #contacto{
+	position: absolute;   
+	left: 40%;
+	margin-top: 50%;
+
+   
+}
+#correo{
+
+}
+#contacto .Textito{
+	width: 200px;
+	height: 40px;
+	color: black;
+    margin-left: 80%;
+    margin-top: -25%;
+    display:block;
+    height: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    border:3px solid white;
+    box-shadow: 0px 0px 4px #ccc;
+    background: #F4F7FE;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+#gmail:hover .Textito{
+	opacity: 1;
+	transform: translateX(0%);
+}
+#celular:hover .phone{
+	opacity: 1;
+	transform: translateX(0%);
+}
+
+#telefono{
+	display: block;
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	left: 30%;
+	margin-top: 40%;
+
+}
+.phone{
+	position: absolute;
+	width: 100px;
+	
+	color: black;
+    margin-left: 80%;
+    margin-top: 50%;
+    display:block;
+    height: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-shadow: 0px 0px 1px #ccc;
+    border:3px solid white;
+    box-shadow: 0px 0px 4px #ccc;
+    background: #F4F7FE;
+    transform: translateX(-80%);
+    opacity: 0;
+    transition: all 400ms;
+}
+
+
+
+#re{
+	width: 5rem;
+	height: 2rem;
+    background-size: 100%;
+	background-color: #e44c65;
+    
+	color: white;
+	font-family: Arial;
+	position: absolute;
+	margin-top: 40%;
+	margin-left: 5%;
+	border-style: none;
+	box-shadow: 0px 0px 8px black;
+	text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+
+}
+#re:hover{
+	box-shadow: 0px 0px 8px white;
+}
